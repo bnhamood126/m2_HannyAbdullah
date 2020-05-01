@@ -1,5 +1,9 @@
-/* TODO: Style the input field so that at minimum ... */
-/* 1. The input has only the bottom border
- * 2. The font is a monospaced font
- * (all other design decisions are up to you)
- */
+ input{
+     border-top-style: none;
+     border-left-style: none;
+     border-right-style: none;
+     border-bottom-style: solid;
+
+     font-family: "Lucida Console", Courier, monospace;
+ }
+ 
