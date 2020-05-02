@@ -6,7 +6,7 @@ function myKeyPress(e){
   mytextbox = document.getElementById("textinput").value;
   // this retrieves the value from the input into mytextbox
 
-  // TODO: set the value of the textbox with the formatted value
+ 
 
   var keyPressed;
   if(window.event) { // IE
@@ -17,6 +17,15 @@ function myKeyPress(e){
 
   var x = String.fromCharCode(keyPressed);
   var y = formatPhoneNumber("7189515000");
+  
+  var newtextbox = y; 
+  document.getElementById("textinput").value = newtextbox; 
+  /* This sets the value of the formated number into a new
+     variable newtextbox 
+     The second line is the textinput box value being set with
+     the value of the formatted number so that the number is 
+     formatted as you type it into the input. 
+  */ 
 
 
   console.log("Key Pressed = " + x);
