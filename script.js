@@ -33,7 +33,9 @@ function myKeyPress(e){
 
 
 
-  // TODO: Add a condition to ignore entries beyond 10 digits
+  document.getElementById("textinput").maxLength = "12"; 
+  // This condition sets the maximumg length of the textbox to 
+  // 12, thus making any input over 10 numbers be ignored
 
 }
 
