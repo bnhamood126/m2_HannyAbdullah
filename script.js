@@ -41,7 +41,9 @@ function myKeyPress(e){
 
 function formatPhoneNumber(value){
 
-  /* TODO:  Use replace function to ignore extra - character */
+  value = value.replace(/\D/g, '');
+  // This replace function ignores any additonal "-" from being
+  // added inbetween the value slices.
 
   if(value.length > 3 && value.length <= 6)
     value = value.slice(0,3) + "-" + value.slice(3);
